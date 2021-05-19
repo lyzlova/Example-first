@@ -1,0 +1,77 @@
+@import "../base/variables";
+
+.footer {
+    background-color: $color-bcg-footer;
+
+    padding: 70px 20px 0;
+
+    @media screen and (min-width: 1400px) {
+        padding: 0 52px 0 244px;
+    }
+
+}
+
+.footer-top {
+    padding: 58px 0 32px 0;
+
+    .social {
+        margin: 40px 0;
+        width: 176px;
+    }
+
+    a:hover,
+    a:focus {
+        color: darken($color-text-white, 20%);
+    }
+}
+
+.column-logo {
+    a:hover,
+    a:focus {
+        transform: scale(1.1);
+    }
+}
+
+.delivery-link {
+    margin-right: 60px;
+}
+
+.payment {
+    &__link:not(:last-child) {
+        margin-right: 6px;
+    }
+}
+
+.column-about {
+    display: none;
+
+    @media screen and (min-width: 1024px) {
+        display: block;
+    }
+
+    &__link {
+        font-size: 14px;
+        line-height: 18px;
+        color: $color-text-white;
+        font-family: 'Roboto-regular', sans-serif;
+        opacity: 0.5;
+    }
+}
+
+.hotline {
+    &__link {
+        font-size: 18px;
+        line-height: 21px;
+        color: $color-text-white;
+        font-family: 'Roboto-medium', sans-serif;
+        opacity: 0.7;
+
+        &:first-child {
+            @media screen and (min-width: 1024px) {
+                margin-bottom: 12px;
+                font-size: 24px;
+                line-height: 28px;
+            }
+        }
+    }
+}

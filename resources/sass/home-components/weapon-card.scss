@@ -1,0 +1,135 @@
+@import "../base/variables";
+
+.weapons {
+    overflow-x: hidden;
+    padding: 10px 30px 70px;
+}
+
+.weapon-card {
+    padding: 20px 20px 0;
+    border: 1px solid #F1F1F1;
+    border-radius: 3px;
+    width: 435px;
+
+    &:not(:last-child) {
+        margin-right: 33px;
+    }
+
+    @media screen and (max-width: 575px){
+        width: 309px;
+    }
+
+    &__heading {
+        color: $color-weapon-card-heading;
+        font-family: 'Montserrat-regular', sans-serif;
+        font-size: 16px;
+        line-height: 20px;
+        margin-bottom: 8px;
+    }
+
+    &__photo {
+        margin-bottom: 12px;
+    }
+
+    &__rating {
+        .reviews {
+            margin-left: 10px;
+            color: $color-weapon-card-heading;
+            font-family: 'Montserrat-regular', sans-serif;
+            font-size: 13px;
+            line-height: 16px;
+        }
+        margin-bottom: 34px;
+    }
+}
+
+.activity {
+    &__label {
+        left: 20px;
+        top: -16px;
+        padding: 7px 16px;
+        border-radius: 30px;
+
+        color: $color-text-white;
+        font-family: 'Montserrat-bold', sans-serif;
+        font-size: 13px;
+        line-height: 16px;
+        text-transform: uppercase;
+    }
+
+    &__actions {
+        top: 18px;
+        right: 18px;
+    }
+
+    &__gift {
+        top: 380px;
+        left: 23px;
+    }
+}
+
+.prices {
+    font-family: 'Commissioner-regular', sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+
+    &__old {
+        color: $color-weapon-card-reviews;
+
+        & + div {
+            color: $color-new-price;
+        }
+
+        &:before {
+            position: absolute;
+            left: 30%;
+            top: 50%;
+            width: 60%;
+            content: "";
+            transform: translate(-50%, -50%);
+            border-bottom: 2px solid $color-crash-old-price;
+        }
+    }
+
+    &__new {
+        color: $color-static-price;
+        font-size: 20px;
+        line-height: 24px;
+        font-family: 'Commissioner-bold', sans-serif;
+    }
+}
+
+.buy-button {
+        padding: 12px 15px;
+
+    &__text {
+        opacity: 0;
+    }
+}
+
+.weapon-card {
+    &:hover {
+        background-color: $color-text-white;
+        box-shadow: 0 20px 80px rgba(0, 0, 0, 0.1);
+        border: 1px solid #F1F1F1;
+        box-sizing: border-box;
+
+        & .buy-button {
+            background-color: $color-bcg-buy-button;
+            color: $color-text-white;
+            border-radius: 3px;
+        }
+
+        & .buy-button__icon {
+            margin-right: 10px;
+           fill: #ffffff;
+        }
+
+        & .buy-button__text {
+            opacity: 1;
+            order: 1;
+        }
+    }
+}
+
+

@@ -1,0 +1,25 @@
+@import "../base/variables";
+
+.button {
+    font-size: 15px;
+    line-height: 17.58px;
+    color: $color-text-white;
+    text-transform: uppercase;
+    text-align: center;
+    border-radius: 70px;
+    box-sizing: border-box;
+    border: 2px solid $color-text-white;
+    font-family: 'Roboto-regular', sans-serif;
+}
+
+.button {
+    @media screen and (min-width: 1200px) {
+        &:hover,
+        &:focus {
+            transform: scale(1.1);
+        }
+    }
+}
+
+
+

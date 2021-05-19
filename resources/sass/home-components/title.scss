@@ -1,0 +1,26 @@
+@import "../base/variables";
+
+.title {
+    font-size: 30px;
+    line-height: 36px;
+    color: $color-text-white;
+    @media screen and (min-width: 1200px) {
+        font-size: 64px;
+        line-height: 72px;
+    }
+}
+
+.footer-title {
+    font-size: 18px;
+    line-height: 21px;
+    color: $color-text-white;
+    font-family: 'Roboto-medium', sans-serif;
+    margin-bottom: 14px;
+}
+
+div {
+    @media screen and (max-width: 1199px) {
+        font-size: 12px;
+    }
+}
+

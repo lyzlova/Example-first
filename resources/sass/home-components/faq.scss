@@ -1,0 +1,44 @@
+@import "../base/variables";
+
+.faq {
+    z-index: 6;
+    top: 46px;
+    left: 49.4%;
+    transform: translate(-50%, -50%);
+
+    &__title {
+        margin-bottom: 50px;
+        font-family: 'Roboto-regular', sans-serif;
+        font-size: 16px;
+        line-height: 24px;
+        color: $color-faq-title;
+    }
+
+    &__button {
+        z-index: 10;
+        padding: 21px 16px;
+        background: $color-button-bcg;
+
+        @media screen and (min-width: 1400px) {
+            padding: 21px 30px 21px 46px;
+        }
+
+        &::before {
+            position: absolute;
+            top: 65%;
+            right: -84px;
+            pointer-events: none;
+            display: block;
+            width: 122px;
+            height: 120px;
+            z-index: 1;
+            content: "";
+            transform: translate(-50%, -50%);
+            //background: url('../../images/icons/Vector.svg') center center no-repeat;
+        }
+    }
+
+    &__icon {
+        margin: -4px 0 0 20px ;
+    }
+}

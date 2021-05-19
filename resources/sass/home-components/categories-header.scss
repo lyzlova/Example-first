@@ -1,0 +1,36 @@
+@import "../base/variables";
+
+.categories-header {
+    padding: 84px 30px 40px;
+
+    @media screen and (min-width: 1200px) {
+        padding: 82px 154px 40px 159px;
+    }
+
+    &__title {
+        margin-top: -4px;
+        font-family: 'Roboto-light', sans-serif;
+
+        @media screen and (max-width: 576px) {
+            margin-bottom: 20px;
+        }
+    }
+
+    &__button {
+        padding: 22px 28px 18px 34px;
+        min-width: 188px;
+        color: $color-text-white;
+        background-color: inherit;
+
+        &:hover,
+        &:focus,
+        &:active {
+            color: $color-text-white;
+            transform: scale(1.1);
+        }
+    }
+}
+
+
+
+

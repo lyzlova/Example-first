@@ -1,0 +1,40 @@
+@import '~bootstrap/scss/bootstrap';
+@import '~normalize.css';
+@import "~slick-carousel/slick/slick.scss";
+@import "~slick-carousel/slick/slick-theme.scss";
+@import "~malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css";
+
+@import "base/main";
+@import "base/variables";
+@import "base/maps";
+@import "base/visually-hidden";
+
+@import "home-components/scrollbar";
+@import "base/slick";
+@import "home-components/scroll-up";
+@import "home-components/cookies";
+
+@import "home-components/button";
+@import "home-components/title";
+
+//categories
+@import "home-components/categories";
+@import "home-components/categories-header";
+@import "home-components/category";
+
+//seo
+@import "home-components/seo";
+@import "home-components/faq";
+@import "home-components/products";
+@import "home-components/card";
+
+//weapon-accessories
+@import "home-components/weapon-accessories";
+
+//weapon-card
+@import "home-components/weapon-card";
+
+//footer
+@import "home-components/footer-top";
+@import "home-components/footer-bottom";
+
