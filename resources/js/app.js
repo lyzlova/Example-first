@@ -1,9 +1,12 @@
 require('./bootstrap');
 require('./slider');
-require('jquery');
-require('slick-carousel/slick/slick.min');
-
 require('./scrollbar');
-
 require('./cookie');
 require('./scroll-up');
+require('./dropdown-phones-header');
+require('./menu');
+require('./basket-hovering');
+require('./dropdown-catalog-menu');
+require("./lazyLoading");
+require('./fancybox');
+require('./basket');

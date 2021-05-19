@@ -18,6 +18,10 @@ body {
     'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
 }
 
+body.modal-open {
+    overflow: hidden;
+}
+
 h1,
 h2,
 h3,
@@ -37,16 +41,23 @@ img {
     object-fit: fill;
 }
 
-a {
-    cursor: pointer;
-    text-decoration: none;
-}
-
-a:hover,
-a:focus,
-a:active {
+.link-active:hover,
+.link-active:focus,
+.link-active:active {
     text-decoration: none;
     outline: none;
+}
+
+.link-active--darken:hover,
+.link-active--darken:focus,
+.link-active--darken:active {
+    color: darken($color-text-white, 20%);
+}
+
+.link-active--header:hover,
+.link-active--header:focus,
+.link-active--header:active {
+    color: red;
 }
 
 button, input {

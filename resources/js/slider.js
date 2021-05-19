@@ -1,10 +1,18 @@
 import $ from 'jquery';
 import 'slick-carousel';
 
-    $(".categories__list").slick({
+const categoriesList = document.querySelector(".categories__list");
+
+if(categoriesList) {
+    $(categoriesList).slick({
         draggable: true,
         slidesToScroll: 2,
         variableWidth: true,
+
+        infinite: false,
+        arrows: false,
+        loop: true,
+
         responsive: [
             {
                 breakpoint: 2561,
@@ -33,7 +41,7 @@ import 'slick-carousel';
                 settings: {
                     slidesToShow: 2,
                     slidesToScroll: 2,
-                    centerMode: true,
+                    // centerMode: true,
                 },
             },
             {
@@ -41,12 +49,12 @@ import 'slick-carousel';
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1,
-                    centerMode: true,
+                    // centerMode: true,
                 },
             },
         ],
         mobileFirst: true,
     });
-
+}
 
 

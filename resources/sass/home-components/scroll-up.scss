@@ -1,26 +1,20 @@
 @import "../base/variables";
+@import "../utils/mixins";
 
 .scroll-up {
-    visibility: hidden;
-    font-size: 12px;
-    line-height: 14px;
-    color: $color-scroll-up-bcg;
-    font-family: 'Roboto-medium', sans-serif;
+    font-family: $fonts-Roboto;
+    @include font(12px, $color-scroll-up-bcg, 500, 14px, 0);
 
     &__button {
         width: 40px;
         height: 40px;
+        margin-bottom: 10px;
         background-color: $color-scroll-up-bcg;
         border-radius: 100%;
         border: 1px solid $color-scroll-up-bcg;
-        margin-bottom: 10px;
     }
 
-    &.active {
-        z-index: 12;
-        visibility: visible;
-        position: fixed;
-        right: 2%;
-        bottom: 60px;
+    @media screen and (max-width: 991px) {
+        margin-top: 30px;
     }
 }

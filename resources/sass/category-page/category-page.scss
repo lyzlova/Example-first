@@ -1,0 +1,9 @@
+@import "../base/variables";
+@import "../utils/mixins";
+
+.categories-page {
+    &__title {
+        font-family: $fonts-Roboto;
+        @include font(52px, $color-title-category-page, 300, 72px, 0);
+    }
+}

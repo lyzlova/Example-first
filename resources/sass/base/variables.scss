@@ -1,17 +1,33 @@
+//fonts
+$fonts-Roboto: 'Roboto', sans-serif;
+$fonts-Nunito: 'Nunito', sans-serif;
+$fonts-Manrope: 'Manrope', sans-serif;
+$fonts-Commissioner: 'Commissioner', sans-serif;
+$fonts-Montserrat: 'Montserrat', sans-serif;
+
+//colors
 $color-body-bcg: #E5E5E5;
-
 $color-text-white: #fff;
-$color-gradient-bcg: #FE3449;
 
-$color-gradient-categories-first: #ff7800;
-$color-gradient-categories-second: #fe374a;
+//header
+$color-bcg-categories: #FFBE48;
+$color-bcg-form: #DDE8F0;
+$color-header-link: #5C6D7D;
+$color-header-link-active: #33485D;
+$color-bcg-menu-mobile: #34495E;
 
-$color-gradient-categories-ellipse-first-color-first: rgba(255, 255, 255, 0.042);
-$color-gradient-categories-ellipse-first-color-second: rgba(216, 248, 255, 0.2);
+//basket
+$color-hover-basket: #47B39C;
+$color-basket-item-border: #EDEDED;
 
-$color-gradient-categories-ellipse-second-color-first: rgba(254, 52, 73, 0.2);
-$color-gradient-categories-ellipse-second-color-second: rgba(255, 55, 74, 0.2);
+//basket-hovering
+//$color-accent-text: #33485D;
+$color-main-text: #5C6D7D;
 
+//catalog
+$color-bc-hover-catalog-menu: #DDE8F0;
+
+//categories
 $color-ellipse-start: rgba(255, 255, 255, 0);
 $color-ellipse-first: #F5DF4D;
 $color-ellipse-second: #FF6D43;
@@ -19,11 +35,13 @@ $color-ellipse-second: #FF6D43;
 $color-linear-gradient-picture-first: rgba(25, 35, 47, 0);
 $color-linear-gradient-picture-second: #17212D;
 
+//faq
 $color-button-bcg: #FF485A;
 
 $color-faq-title: #6A677B;
 $color-footer-bcg: #F7F9F9;
 
+//weapon-card
 $color-product-bcg: #FF485A;
 
 $color-weapon-card-heading: #000000;
@@ -32,7 +50,6 @@ $color-weapon-card-reviews: #A7B0B5;
 $color-crash-old-price: #E02020;
 $color-new-price: #E02020;
 $color-static-price: #333333;
-
 $color-bcg-buy-button: #52AA50;
 
 //footer
@@ -40,10 +57,12 @@ $color-bcg-footer: #34495E;
 $color-footer-rectangle: #5C6D7D;
 $color-scroll-up-bcg: #DDE8F0;
 
-
 //cookies
 $color-cookies-bcg: #74C3B4;
 $color-border-cookies-btn: #FFBE48;
 
 // scrollbar
 $color-scrollbar-dragger-container: #000000;
+
+//category-page
+$color-title-category-page: #000000;

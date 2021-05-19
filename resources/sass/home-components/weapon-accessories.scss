@@ -1,90 +1,14 @@
 @import "../base/variables";
+@import "../utils/mixins";
 
 .weapon-accessories {
-    padding: 33px 30px 7px;
+    padding: 0;
 
-    &__link {
-        border-radius: 3px;
+    @media screen and (min-width: 768px) {
+        padding: 33px 30px 7px;
     }
 
-    &__button {
-        padding: 6px;
-
-        border: 2px solid $color-text-white;
-        border-radius: 3px;
-
-        font-family: 'Montserrat-bold', sans-serif;
-        font-size: 12px;
-        line-height: 20px;
-        text-align: center;
-        text-transform: uppercase;
-        color: $color-text-white;
-
-        @media screen and (min-width: 1200px) {
-            padding: 14px 30px;
-
-            &:hover,
-            &:focus,
-            &:active {
-                transform: scale(1.1);
-            }
-        }
-    }
-
-    &__content {
-        .equipment {
-            padding: 0 15px 0 0;
-        }
-
-        .knives {
-            padding: 0 15px 0 0;
-        }
-
-        .weapon {
-            padding: 0 0 0 10px;
-        }
-
-        .cartridges {
-            padding: 0 12px 0 0;
-
-            @media screen and (min-width: 768px) {
-                padding: 0 15px 0 0;
-            }
-        }
-
-        .accessories {
-            padding: 0 0 0 10px;
-
-            @media screen and (min-width: 768px) {
-                padding: 0 0 0 15px;
-            }
-        }
-
-        .range {
-            padding: 20px 0 0 0;
-            @media screen and (min-width: 768px) {
-                padding: 0 0 0 0;
-            }
-
-        }
-
-        .first-col-content {
-            margin-bottom: 20px;
-
-            @media screen and (min-width: 768px) {
-                padding: 0 6px 0 0;
-                margin-bottom: 0;
-            }
-        }
-
-        .second-col-content {
-            @media screen and (min-width: 768px) {
-                padding: 0 0 0 18px;
-            }
-        }
-    }
-
-    &__picture {
+    &__card {
         &:before {
             position: absolute;
             top: 0;
@@ -95,6 +19,55 @@
             background-color: rgba(0, 0, 0, 0.3);
         }
     }
+
+    &__button {
+        padding: 6px;
+        max-width: 90%;
+
+        border: 2px solid $color-text-white;
+        border-radius: 3px;
+
+        text-align: center;
+        text-transform: uppercase;
+
+        font-family: $fonts-Montserrat;
+        @include font(12px, $color-text-white, 700, 14px, 0);
+
+        @media screen and (min-width: 1200px) {
+            padding: 14px 30px;
+            @include font(16px, $color-text-white, 700, 20px, 0);
+        }
+    }
+
+    .weapon {
+        @media screen and (min-width: 992px) {
+            padding: 0 0 0 11px;
+        }
+    }
+
+    .range {
+        @media screen and (max-width: 991px) {
+            padding: 20px 0 0 0;
+        }
+    }
+
+    .first-col-content {
+        padding: 0;
+        margin-bottom: 20px;
+
+        @media screen and (min-width: 992px) {
+            padding: 0 10px 0 0;
+            margin-bottom: 0;
+        }
+    }
+
+    .second-col-content {
+        padding: 0;
+        @media screen and (min-width: 992px) {
+            padding: 0 0 0 16px;
+        }
+    }
 }
+
 
 

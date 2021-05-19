@@ -1,4 +1,5 @@
 @import "../base/variables";
+@import "../utils/mixins";
 
 .faq {
     z-index: 6;
@@ -8,16 +9,18 @@
 
     &__title {
         margin-bottom: 50px;
-        font-family: 'Roboto-regular', sans-serif;
-        font-size: 16px;
-        line-height: 24px;
-        color: $color-faq-title;
+
+        font-family: $fonts-Roboto;
+        @include font(16px, $color-faq-title, 400, 24px, 0);
     }
 
     &__button {
         z-index: 10;
         padding: 21px 16px;
         background: $color-button-bcg;
+        text-transform: uppercase;
+        border-radius: 70px;
+        @include font(15px, $color-text-white, 400, 18px, 0);
 
         @media screen and (min-width: 1400px) {
             padding: 21px 30px 21px 46px;
@@ -27,12 +30,12 @@
             position: absolute;
             top: 65%;
             right: -84px;
-            pointer-events: none;
             display: block;
             width: 122px;
             height: 120px;
             z-index: 1;
             content: "";
+            pointer-events: none;
             transform: translate(-50%, -50%);
             //background: url('../../images/icons/Vector.svg') center center no-repeat;
         }

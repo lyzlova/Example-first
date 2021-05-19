@@ -1,4 +1,13 @@
 @import "../base/variables";
+@import "../utils/mixins";
+
+.cards {
+    padding: 0 30px;
+
+    @media screen and (min-width: 1200px) {
+        padding: 0 144px;
+    }
+}
 
 .card {
     padding: 32px 49px 28px 32px;
@@ -6,13 +15,11 @@
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);
     border-radius: 10px;
 
-    font-family: 'Roboto-regular', sans-serif;
-    line-height: 24px;
-    color: $color-faq-title;
+    font-family: $fonts-Roboto;
+    @include font(18px, $color-faq-title, 400, 24px, 0);
 
     &__title {
         margin-bottom: 30px;
-        font-size: 18px;
     }
 
     &__time {
